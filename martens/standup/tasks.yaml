@@ -1,0 +1,18 @@
+- title: Set up standup
+  description: |
+    - [ ] Who's in the standup
+    - [ ] What time to ask, and when to post the summary
+    - [ ] Days off to skip
+  assignee: marten
+- title: Ask for standup updates
+  description: |
+    One line asking what you did, what you're doing today, and anything blocking you.
+  repeat: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+  time: "09:30"
+  assignee: marten
+- title: Post the standup summary
+  description: |
+    The day's updates in one short message, open blockers first.
+  repeat: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+  time: "11:30"
+  assignee: marten

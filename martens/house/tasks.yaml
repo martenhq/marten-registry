@@ -1,0 +1,20 @@
+- title: Set up the house
+  description: |
+    - [ ] Who lives here
+    - [ ] The chores, and how often each needs doing
+    - [ ] The regular bills: what, when they're due, who pays
+  assignee: marten
+- title: Post this week's chores
+  description: |
+    Read the Chores sketch. Post who's up this week, one line per person, and any chore from last week that wasn't
+    ticked, without blame.
+  repeat: "FREQ=WEEKLY;BYDAY=MO"
+  time: "09:00"
+  assignee: marten
+- title: "Example bill: rent reminder"
+  description: |
+    An example of a bill reminder. Once the house has told you its bills, make one task like this per bill, assigned
+    to whoever pays it, a few days before it's due, then delete this one.
+  repeat: "FREQ=MONTHLY;BYMONTHDAY=27"
+  time: "10:00"
+  assignee: marten

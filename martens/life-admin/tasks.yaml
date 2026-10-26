@@ -1,0 +1,14 @@
+- title: Gather your key dates
+  description: |
+    - [ ] Passport and ID
+    - [ ] Driving licence and car
+    - [ ] Home insurance and services
+    - [ ] Health appointments
+    - [ ] Subscriptions that renew
+  assignee: marten
+- title: Monthly look-ahead
+  description: |
+    What's due in the next two months, soonest first, with the first step for anything that needs action now.
+  repeat: "FREQ=MONTHLY;BYMONTHDAY=1"
+  time: "09:00"
+  assignee: marten

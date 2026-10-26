@@ -1,0 +1,14 @@
+- title: Settle the event's basics
+  description: |
+    - [ ] The occasion and the date
+    - [ ] Roughly how many guests
+    - [ ] The place, if it's known
+    - [ ] A rough budget
+  assignee: marten
+- title: Weekly event check-in
+  description: |
+    Post what's due in the coming week and who has it, the RSVP count, and anything that's late. If the event is
+    over, ask the group whether to delete this check-in.
+  repeat: "FREQ=WEEKLY;BYDAY=WE"
+  time: "18:00"
+  assignee: marten

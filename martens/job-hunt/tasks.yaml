@@ -1,0 +1,15 @@
+- title: Set up your search
+  description: |
+    - [ ] The roles you're after, and where
+    - [ ] Applications already in flight, into the Pipeline
+    - [ ] Your background in a few lines, for prep and drafts
+  assignee: marten
+- title: Weekly job search look
+  description: |
+    What's active, what's waiting on a reply, what's due this week. Set follow-ups for anything that's gone quiet.
+  repeat: "FREQ=WEEKLY;BYDAY=MO"
+  time: "09:00"
+  assignee: marten
+- title: Connect Gmail so I can spot replies from companies
+  assignee: owner
+  when: { missing: gmail }

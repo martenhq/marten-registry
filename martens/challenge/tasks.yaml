@@ -1,0 +1,12 @@
+- title: Set up the challenge
+  description: |
+    - [ ] What counts as a day done
+    - [ ] How long it runs, and the start date
+    - [ ] Who's in
+  assignee: marten
+- title: Daily check-in
+  description: |
+    One short line: a cheer for who's checked in today, and a nudge for the rest without naming anyone.
+  repeat: "FREQ=DAILY"
+  time: "19:00"
+  assignee: marten

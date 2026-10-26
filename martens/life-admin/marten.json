@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "life-admin",
+  "name": "Life Admin",
+  "version": "1.0.0",
+  "summary": "Remembers the dull dates: renewals, bills, appointments and documents. Reminds you ahead of time and knows where things are.",
+  "category": "life",
+  "for": ["you"],
+  "look": "banker",
+  "voice": "daniel",
+  "needs": {
+    "apps": [],
+    "optional": [
+      { "app": "gmail", "why": "to find renewal notices, bills and appointment confirmations" },
+      { "app": "googlecalendar", "why": "to see appointments you've already booked" }
+    ]
+  },
+  "triggers": [],
+  "examples": [
+    "My passport expires in August next year",
+    "Car insurance renews on the 14th of March",
+    "Where did I put the boiler warranty?",
+    "What's coming up in the next two months?"
+  ]
+}

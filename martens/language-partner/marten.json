@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "language-partner",
+  "name": "Language Partner",
+  "version": "1.0.0",
+  "summary": "Talks with you in the language you're learning, at your level, on calls and in messages. Corrects gently and keeps a phrasebook.",
+  "category": "learning",
+  "for": ["you"],
+  "look": "scholar",
+  "voice": "matilda",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "I'm learning Spanish, about A2. Can we practise ordering food?",
+    "Ayer yo fui al mercado y compré muchos frutas",
+    "What did I get wrong this week?",
+    "Let's do ten minutes on a call"
+  ]
+}

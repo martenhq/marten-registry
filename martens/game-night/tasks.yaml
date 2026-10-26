@@ -1,0 +1,13 @@
+- title: Set up game night
+  description: |
+    - [ ] Which evenings usually work, and where you play
+    - [ ] What you play most
+    - [ ] How long a season runs (say, 10 weeks)
+  assignee: marten
+- title: Pick this week's game night
+  description: |
+    Ask the group which of the next few evenings works, as a question everyone can answer. Once most have answered,
+    post the night and the place in one line.
+  repeat: "FREQ=WEEKLY;BYDAY=MO"
+  time: "10:00"
+  assignee: marten

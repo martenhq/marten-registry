@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "standup",
+  "name": "Standup",
+  "version": "1.0.0",
+  "summary": "Runs the team's async standup: asks each weekday morning, posts a short summary, and keeps blockers as tasks.",
+  "category": "work",
+  "for": ["group"],
+  "look": "chief",
+  "voice": "daniel",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Yesterday: shipped the export. Today: invoices. Blocked on API access",
+    "What are people working on today?",
+    "Skip standup on Friday, it's a holiday",
+    "Is anything still blocked?"
+  ]
+}

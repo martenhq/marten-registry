@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "settle-up",
+  "name": "Settle Up",
+  "version": "1.0.0",
+  "summary": "Logs who paid what as the group says it, keeps everyone's balance, and works out the fewest payments to settle up.",
+  "category": "money",
+  "for": ["group"],
+  "look": "banker",
+  "voice": "daniel",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "I paid 84 for dinner, split between all of us",
+    "The taxi was 30, just me and the two of them",
+    "Who owes whom right now?",
+    "I've sent my share for the cabin"
+  ]
+}

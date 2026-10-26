@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "game-night",
+  "name": "Game Night",
+  "version": "1.0.0",
+  "summary": "Runs the group's game nights: picks the night, keeps score for any game, and keeps the season's standings.",
+  "category": "games",
+  "for": ["group"],
+  "look": "champion",
+  "voice": "will",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Which night works for games this week?",
+    "Catan: I won, then the two of you tied second",
+    "Keep score for poker tonight, we each buy in for 20 chips",
+    "Who's top of the table this season?"
+  ]
+}

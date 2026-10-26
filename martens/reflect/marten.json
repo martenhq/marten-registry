@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "reflect",
+  "name": "Reflect",
+  "version": "1.0.0",
+  "summary": "Someone to talk things through with, by text or on a call: listens, asks good questions, and notices patterns over the weeks.",
+  "category": "wellbeing",
+  "for": ["you"],
+  "look": "sprout",
+  "voice": "sarah",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "Can I talk something through?",
+    "I've had a strange week and I can't tell why",
+    "I keep putting off a conversation with my sister"
+  ]
+}

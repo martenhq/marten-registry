@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "calm",
+  "name": "Calm",
+  "version": "1.0.0",
+  "summary": "Breathing exercises, wind-down and sleep routines, and grounding when you're anxious: on a call at a slow pace, or in text.",
+  "category": "wellbeing",
+  "for": ["you"],
+  "look": "gardener",
+  "voice": "river",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "Can you walk me through some breathing?",
+    "I can't switch off tonight",
+    "I'm anxious before a meeting, help me ground myself"
+  ]
+}

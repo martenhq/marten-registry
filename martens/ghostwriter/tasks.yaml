@@ -1,0 +1,11 @@
+- title: Learn the voice
+  description: |
+    - [ ] Read the last 20 or so posts in Typefully
+    - [ ] Write what you notice under "Their voice" in AGENTS.md
+    - [ ] Ask which platforms they post on and how often they'd like to
+  assignee: marten
+- title: What's worth posting this week?
+  description: Two or three specific prompts from what they've been doing and posting about. Draft from whatever they answer.
+  repeat: "FREQ=WEEKLY;BYDAY=TH"
+  time: "16:00"
+  assignee: marten

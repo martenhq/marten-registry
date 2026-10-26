@@ -1,0 +1,15 @@
+- title: Get to know the inbox
+  description: |
+    - [ ] Read the last two weeks of the inbox and the sent mail
+    - [ ] List what's still waiting on a reply
+    - [ ] Note how they write, from their sent mail
+    - [ ] Ask who always matters and what to always skip
+  assignee: marten
+- title: Morning brief
+  description: Today's meetings, what needs a reply, what's due, and who we're waiting on.
+  repeat: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+  time: "08:00"
+  assignee: marten
+- title: Connect Google Calendar so the brief includes your meetings
+  assignee: owner
+  when: { missing: googlecalendar }

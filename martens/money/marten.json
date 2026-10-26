@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "money",
+  "name": "Money",
+  "version": "1.0.0",
+  "summary": "Keeps your YNAB budget tidy: categorises transactions, a calm weekly recap, and a heads-up before a category runs out.",
+  "category": "money",
+  "for": ["you"],
+  "look": "banker",
+  "voice": "daniel",
+  "needs": {
+    "apps": [{ "app": "ynab", "why": "to read your budget and transactions, and categorise them when you say so" }],
+    "optional": []
+  },
+  "triggers": [],
+  "examples": [
+    "Can I afford a $400 weekend away this month?",
+    "How did we do on groceries this week?",
+    "Categorise the new transactions",
+    "Move $50 from dining out to groceries"
+  ]
+}

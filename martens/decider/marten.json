@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "decider",
+  "name": "Decider",
+  "version": "1.0.0",
+  "summary": "Helps a group decide (where to eat, which date, which flat): gathers the options, runs a fair vote, calls it.",
+  "category": "social",
+  "for": ["group"],
+  "look": "captain",
+  "voice": "river",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Where should we eat on Friday?",
+    "Can we vote on the three flats we saw?",
+    "Which weekend works for everyone in June?",
+    "Close the vote, we need to book tonight"
+  ]
+}

@@ -1,0 +1,15 @@
+- title: Get to know your training
+  description: |
+    - [ ] Your goal, and by when if there's a date
+    - [ ] Days a week and time per session
+    - [ ] What you do now
+    - [ ] Any injuries, pain or conditions to plan around
+    - [ ] Plan the first week
+  assignee: marten
+- title: Plan the week
+  description: |
+    Look back at this week: what was done, what was missed, how it felt. Then plan next week in the Plan sketch and
+    sum it up in a few lines.
+  repeat: "FREQ=WEEKLY;BYDAY=SU"
+  time: "18:00"
+  assignee: marten

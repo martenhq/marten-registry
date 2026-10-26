@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "event-host",
+  "name": "Event Host",
+  "version": "1.0.0",
+  "summary": "Hosts the group's event with you: RSVPs and dietary needs, the to-do list, the budget, and the run of the day.",
+  "category": "events",
+  "for": ["group"],
+  "look": "host",
+  "voice": "lily",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "We're throwing a surprise 40th on the 14th",
+    "I'm in, plus one, and I'm vegetarian",
+    "What's left to sort before the party?",
+    "Draft the run of the day for the wedding"
+  ]
+}

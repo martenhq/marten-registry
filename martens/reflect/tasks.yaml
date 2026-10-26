@@ -1,0 +1,6 @@
+- title: Weekly check-in
+  description: |
+    Ask, in one short warm message, how the week was. If they answer, talk it through. If they don't, leave it.
+  repeat: "FREQ=WEEKLY;BYDAY=SU"
+  time: "18:00"
+  assignee: marten

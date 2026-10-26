@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "book-club",
+  "name": "Book Club",
+  "version": "1.0.0",
+  "summary": "Runs the book club: nominations and the vote, the reading schedule, questions before each meeting, what people thought.",
+  "category": "social",
+  "for": ["group"],
+  "look": "scholar",
+  "voice": "alice",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Time to pick next month's book",
+    "I'd like to nominate a short novel this time",
+    "Can you give us some questions for Thursday?",
+    "How far should we be by the meeting?"
+  ]
+}

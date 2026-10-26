@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "couples",
+  "name": "Couples",
+  "version": "1.0.0",
+  "summary": "A weekly check-in for the two of you: what went well, what's on your minds, reflected fairly, and one small thing to try.",
+  "category": "wellbeing",
+  "for": ["group"],
+  "look": "romantic",
+  "voice": "laura",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Let's do our check-in",
+    "Can we do the check-in on Saturdays instead?",
+    "How did last week's small thing go?"
+  ]
+}

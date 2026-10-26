@@ -1,0 +1,21 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "trip-planner",
+  "name": "Trip Planner",
+  "version": "1.0.0",
+  "summary": "Plans the trip with the group: dates, the itinerary, who's booking what, and the shared budget.",
+  "category": "travel",
+  "for": ["group", "you"],
+  "look": "navigator",
+  "voice": "charlie",
+  "needs": {
+    "apps": [],
+    "optional": [{ "app": "gmail", "why": "to find your flight and hotel confirmations" }]
+  },
+  "triggers": [],
+  "examples": [
+    "We're going to Goa for a long weekend in March",
+    "Who still needs to book flights?",
+    "Put the beach day on Saturday and the market on Sunday"
+  ]
+}

@@ -1,0 +1,15 @@
+- title: Learn the team
+  description: |
+    - [ ] Which GitHub repos and Linear teams are theirs
+    - [ ] Who's on the team, and the current cycle or milestone
+    - [ ] Which code they own or review
+    - [ ] Write it under "The team" in AGENTS.md
+  assignee: marten
+- title: Morning standup
+  description: Waiting on you, stuck, what moved yesterday, today's risks.
+  repeat: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR"
+  time: "09:00"
+  assignee: marten
+- title: Connect Superset so I can start coding agents for you
+  assignee: owner
+  when: { missing: superset }

@@ -1,0 +1,12 @@
+- title: Set up the group's money
+  description: |
+    - [ ] Ask which currency the group usually uses
+    - [ ] Log anything already paid that people mention
+  assignee: marten
+- title: Post open balances
+  description: |
+    Read the Balances sketch. If anyone still owes anyone, post the simplified payments in one short message.
+    If everyone's square, say nothing.
+  repeat: "FREQ=WEEKLY;BYDAY=SU"
+  time: "18:00"
+  assignee: marten

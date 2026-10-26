@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "ghostwriter",
+  "name": "Ghostwriter",
+  "version": "1.0.0",
+  "summary": "Turns what you say, voice notes too, into posts and threads in your own voice, drafted in Typefully for X and LinkedIn.",
+  "category": "writing",
+  "for": ["you"],
+  "look": "artist",
+  "voice": "lily",
+  "needs": {
+    "apps": [{ "app": "typefully", "why": "to read your past posts and save drafts; it schedules only when you ask" }],
+    "optional": []
+  },
+  "triggers": [],
+  "examples": [
+    "Turn this into a LinkedIn post: we shipped dark mode after three weeks of arguing about it",
+    "Make a thread out of my voice note",
+    "Shorter, and less salesy",
+    "Schedule the first draft for tomorrow morning"
+  ]
+}

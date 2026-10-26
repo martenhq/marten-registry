@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "founder-numbers",
+  "name": "Founder Numbers",
+  "version": "1.0.0",
+  "summary": "Your week in one card every Monday: revenue, new customers, churn, signups and the funnel, from Stripe and PostHog.",
+  "category": "business",
+  "for": ["you"],
+  "look": "captain",
+  "voice": "brian",
+  "needs": {
+    "apps": [
+      { "app": "stripe", "why": "to read revenue, subscriptions, new customers and cancellations" },
+      { "app": "posthog", "why": "to read signups, activation and the funnel from your product events" }
+    ],
+    "optional": []
+  },
+  "triggers": [
+    {
+      "app": "stripe",
+      "type": "STRIPE_CUSTOMER_SUBSCRIPTION_DELETED",
+      "title": "Cancellations",
+      "instructions": "When a subscription is cancelled, tell me in one short update: the customer, their plan and monthly amount, how long they'd been paying, and the reason if Stripe has one. Put several in one update.\nSkip test-mode events and subscriptions replaced by another one for the same customer (an upgrade or downgrade); report those as skipped.\nDon't contact the customer or change anything in Stripe."
+    },
+    {
+      "app": "stripe",
+      "type": "STRIPE_INVOICE_PAYMENT_FAILED",
+      "title": "Failed payments",
+      "instructions": "When an invoice payment fails, send me an update only if it's Stripe's last retry or the amount is large for us. Otherwise send nothing, report it as skipped, and list it under Watch in the Monday card.\nIn an update, say the customer, the amount, the attempt number and when Stripe will retry.\nNever retry a payment, refund, or email the customer yourself: offer a draft of the email if I'd want one."
+    }
+  ],
+  "examples": [
+    "How are we doing this month?",
+    "Why did MRR drop last week?",
+    "What's our signup to paid conversion?",
+    "Who cancelled this week, and why?"
+  ]
+}

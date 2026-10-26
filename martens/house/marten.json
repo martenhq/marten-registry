@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "house",
+  "name": "House",
+  "version": "1.0.0",
+  "summary": "Runs the shared home: chores on a fair rotation, the grocery list, and bills with their due dates and who pays.",
+  "category": "home",
+  "for": ["group"],
+  "look": "gardener",
+  "voice": "matilda",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Put oat milk and eggs on the list",
+    "Whose turn is it to do the bins?",
+    "Rent's due on the 1st, I pay the landlord",
+    "Can someone swap kitchen duty with me this week?"
+  ]
+}

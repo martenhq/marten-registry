@@ -1,0 +1,13 @@
+- title: Evening prompt
+  description: |
+    Send tonight's journal prompt: one or two lines, different from this week's others.
+  repeat: "FREQ=DAILY"
+  time: "21:00"
+  assignee: marten
+- title: Monthly look-back
+  description: |
+    Read last month's entries and send a short look-back: what stood out in their words, one good moment, and one
+    gentle question for the month ahead. No entries, no message.
+  repeat: "FREQ=MONTHLY;BYMONTHDAY=1"
+  time: "19:00"
+  assignee: marten

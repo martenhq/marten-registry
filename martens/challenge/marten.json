@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "challenge",
+  "name": "Challenge",
+  "version": "1.0.0",
+  "summary": "Runs a group challenge (steps, workouts, no sugar, reading): daily check-ins, streaks, a leaderboard and a cheer.",
+  "category": "health",
+  "for": ["group"],
+  "look": "coach",
+  "voice": "will",
+  "needs": { "apps": [] },
+  "triggers": [],
+  "examples": [
+    "Let's do a 30-day no-sugar challenge",
+    "Done! 10k steps today",
+    "Who's on the longest streak?",
+    "I missed yesterday, can I still catch up?"
+  ]
+}

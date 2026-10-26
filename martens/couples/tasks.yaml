@@ -1,0 +1,7 @@
+- title: Weekly check-in
+  description: |
+    Run this week's check-in with both of you (see fair-check-in): last week's small thing, what went well, what's on
+    your minds, both reflected fairly, and one small thing to try.
+  repeat: "FREQ=WEEKLY;BYDAY=SU"
+  time: "19:00"
+  assignee: marten

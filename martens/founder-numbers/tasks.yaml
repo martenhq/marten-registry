@@ -1,0 +1,12 @@
+- title: Agree what the numbers mean
+  description: |
+    - [ ] Which Stripe products and prices count, and the currency to report in
+    - [ ] Which PostHog events are a signup and an activation
+    - [ ] Pull the last 12 weeks to set a baseline
+    - [ ] Fill in the Metrics sketch
+  assignee: marten
+- title: Monday numbers
+  description: Last week's revenue, customers, churn, signups and funnel against the week before. Then refresh Metrics.
+  repeat: "FREQ=WEEKLY;BYDAY=MO"
+  time: "09:00"
+  assignee: marten

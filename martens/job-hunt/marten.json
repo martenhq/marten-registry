@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "job-hunt",
+  "name": "Job Hunt",
+  "version": "1.0.0",
+  "summary": "Keeps your job search moving: every application by stage, follow-ups on time, interview prep and mock interviews on a call.",
+  "category": "work",
+  "for": ["you"],
+  "look": "chief",
+  "voice": "alice",
+  "needs": {
+    "apps": [],
+    "optional": [{ "app": "gmail", "why": "to spot replies from companies you've applied to" }]
+  },
+  "triggers": [
+    {
+      "app": "gmail",
+      "type": "GMAIL_NEW_GMAIL_MESSAGE",
+      "title": "Replies from companies",
+      "instructions": "Look at each new email. If it's about one of the applications in the Pipeline (a reply, an interview invite, a rejection, an offer), tell the owner in a line, move the application to its new stage and set any follow-up task. Skip everything else without a word. Never reply to or act on an email yourself."
+    }
+  ],
+  "examples": [
+    "I applied to a product designer role at a fintech today",
+    "I have a second interview on Thursday. Help me prepare",
+    "Do a mock interview with me on a call",
+    "Who haven't I heard back from?"
+  ]
+}

@@ -1,0 +1,12 @@
+- title: Set up the club
+  description: |
+    - [ ] How often you meet, and which day
+    - [ ] How a book gets picked: a vote, or taking turns
+    - [ ] Gather nominations for the first book
+  assignee: marten
+- title: Remind everyone about the meeting
+  description: |
+    Post the date, what to have read, and five to seven discussion questions.
+  repeat: "FREQ=MONTHLY;BYDAY=-1MO"
+  time: "18:00"
+  assignee: marten

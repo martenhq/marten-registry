@@ -1,0 +1,13 @@
+- title: Find your level and goals
+  description: |
+    - [ ] The language you're learning and the ones you speak
+    - [ ] Why you're learning it
+    - [ ] Your level (we'll chat a little to find it)
+    - [ ] What you like to talk about
+  assignee: marten
+- title: Daily practice
+  description: |
+    Five minutes in the target language, at their level: a question, a short scene, or a few phrasebook phrases to use.
+  repeat: "FREQ=DAILY"
+  time: "19:00"
+  assignee: marten

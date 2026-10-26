@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "coach",
+  "name": "Coach",
+  "version": "1.0.0",
+  "summary": "A running and strength plan that adapts to how your week went. Log workouts by voice note or message; no guilt for missed days.",
+  "category": "health",
+  "for": ["you"],
+  "look": "coach",
+  "voice": "will",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "I want to run 5k by spring. I can train three times a week",
+    "Did 25 minutes easy, legs felt heavy",
+    "I missed Thursday, what now?",
+    "Plan next week around a trip on Wednesday"
+  ]
+}

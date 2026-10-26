@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "mentor",
+  "name": "Mentor",
+  "version": "1.0.0",
+  "summary": "Career talks: think through decisions, rehearse hard conversations on a call, review how they went, and follow up.",
+  "category": "mentors",
+  "for": ["you"],
+  "look": "coach",
+  "voice": "daniel",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "I've got an offer and I can't decide",
+    "Help me prepare to ask for a raise",
+    "Can we rehearse telling my manager I'm burnt out?",
+    "The talk with my lead went badly, can we go over it?"
+  ]
+}

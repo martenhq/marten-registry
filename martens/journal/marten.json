@@ -1,0 +1,18 @@
+{
+  "$schema": "../../schema/marten.schema.json",
+  "slug": "journal",
+  "name": "Journal",
+  "version": "1.0.0",
+  "summary": "A short evening prompt each day, your entries kept by text or voice note, and a look back with you every month.",
+  "category": "wellbeing",
+  "for": ["you"],
+  "look": "nightowl",
+  "voice": "lily",
+  "needs": { "apps": [], "optional": [] },
+  "triggers": [],
+  "examples": [
+    "Today was better than I expected",
+    "What was I worried about a month ago?",
+    "Can you send the prompt at 9:30 instead?"
+  ]
+}

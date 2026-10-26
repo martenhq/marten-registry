@@ -1,0 +1,17 @@
+- title: Get to know the budget
+  description: |
+    - [ ] Read the categories, this month's budget and the last month of transactions
+    - [ ] Ask which categories matter most to watch
+    - [ ] Suggest categories for anything uncategorised
+    - [ ] Fill in the Spending sketch
+  assignee: marten
+- title: Weekly money recap
+  description: The week in and out, categories that moved, what's left for the month. Then refresh Spending.
+  repeat: "FREQ=WEEKLY;BYDAY=SU"
+  time: "18:00"
+  assignee: marten
+- title: Midweek check on categories
+  description: Categorise new transactions (ask first) and give a heads-up on any category close to running out. Stay quiet if all is well.
+  repeat: "FREQ=WEEKLY;BYDAY=WE"
+  time: "18:00"
+  assignee: marten
