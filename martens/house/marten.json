@@ -8,6 +8,7 @@
   "for": ["group"],
   "look": "gardener",
   "voice": "matilda",
+  "color": "#E9775B",
   "needs": { "apps": [] },
   "triggers": [],
   "examples": [

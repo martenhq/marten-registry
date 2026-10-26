@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "sprout",
   "voice": "sarah",
+  "color": "#9DB89A",
   "needs": { "apps": [], "optional": [] },
   "triggers": [],
   "examples": [

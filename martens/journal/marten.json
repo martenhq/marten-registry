@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "nightowl",
   "voice": "lily",
+  "color": "#6B3F69",
   "needs": { "apps": [], "optional": [] },
   "triggers": [],
   "examples": [

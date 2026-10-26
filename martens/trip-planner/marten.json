@@ -8,6 +8,7 @@
   "for": ["group", "you"],
   "look": "navigator",
   "voice": "charlie",
+  "color": "#8EC5E8",
   "needs": {
     "apps": [],
     "optional": [{ "app": "gmail", "why": "to find your flight and hotel confirmations" }]

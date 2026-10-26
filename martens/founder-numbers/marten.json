@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "captain",
   "voice": "brian",
+  "color": "#2F5D8A",
   "needs": {
     "apps": [
       { "app": "stripe", "why": "to read revenue, subscriptions, new customers and cancellations" },

@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "chief",
   "voice": "matilda",
+  "color": "#8A4B2A",
   "needs": {
     "apps": [{ "app": "gmail", "why": "to triage your inbox, find what needs a reply and draft it" }],
     "optional": [

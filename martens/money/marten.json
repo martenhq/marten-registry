@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "banker",
   "voice": "daniel",
+  "color": "#3E5C3A",
   "needs": {
     "apps": [{ "app": "ynab", "why": "to read your budget and transactions, and categorise them when you say so" }],
     "optional": []

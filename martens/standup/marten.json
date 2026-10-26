@@ -8,6 +8,7 @@
   "for": ["group"],
   "look": "chief",
   "voice": "daniel",
+  "color": "#2F5D8A",
   "needs": { "apps": [] },
   "triggers": [],
   "examples": [

@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "coach",
   "voice": "daniel",
+  "color": "#8A4B2A",
   "needs": { "apps": [], "optional": [] },
   "triggers": [],
   "examples": [

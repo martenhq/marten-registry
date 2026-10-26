@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "coach",
   "voice": "will",
+  "color": "#E9775B",
   "needs": { "apps": [], "optional": [] },
   "triggers": [],
   "examples": [

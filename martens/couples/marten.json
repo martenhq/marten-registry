@@ -8,6 +8,7 @@
   "for": ["group"],
   "look": "romantic",
   "voice": "laura",
+  "color": "#F2B5C0",
   "needs": { "apps": [] },
   "triggers": [],
   "examples": [

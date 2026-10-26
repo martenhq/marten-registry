@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "scholar",
   "voice": "matilda",
+  "color": "#F2B23E",
   "needs": { "apps": [], "optional": [] },
   "triggers": [],
   "examples": [

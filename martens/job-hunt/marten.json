@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "chief",
   "voice": "alice",
+  "color": "#8EC5E8",
   "needs": {
     "apps": [],
     "optional": [{ "app": "gmail", "why": "to spot replies from companies you've applied to" }]

@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "banker",
   "voice": "daniel",
+  "color": "#9DB89A",
   "needs": {
     "apps": [],
     "optional": [

@@ -8,6 +8,7 @@
   "for": ["group"],
   "look": "captain",
   "voice": "river",
+  "color": "#B9A6E3",
   "needs": { "apps": [] },
   "triggers": [],
   "examples": [

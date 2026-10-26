@@ -4,35 +4,175 @@
   "title": "A Marten's marten.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["slug", "name", "version", "summary", "category", "for", "look", "voice", "needs", "examples"],
+  "required": [
+    "slug",
+    "name",
+    "version",
+    "summary",
+    "category",
+    "for",
+    "look",
+    "voice",
+    "color",
+    "needs",
+    "examples"
+  ],
   "properties": {
-    "$schema": { "type": "string" },
-    "slug": { "type": "string", "pattern": "^[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?$" },
-    "name": { "type": "string", "minLength": 1, "maxLength": 40 },
-    "version": { "type": "string", "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$" },
-    "summary": { "type": "string", "minLength": 10, "maxLength": 140 },
+    "$schema": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 140
+    },
     "category": {
-      "enum": ["travel", "money", "home", "events", "games", "social", "work", "developer", "business", "writing", "productivity", "health", "learning", "wellbeing", "mentors", "life"]
+      "enum": [
+        "travel",
+        "money",
+        "home",
+        "events",
+        "games",
+        "social",
+        "work",
+        "developer",
+        "business",
+        "writing",
+        "productivity",
+        "health",
+        "learning",
+        "wellbeing",
+        "mentors",
+        "life"
+      ]
     },
-    "for": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "enum": ["you", "group"] } },
+    "for": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "you",
+          "group"
+        ]
+      }
+    },
     "look": {
-      "enum": ["banker", "navigator", "chef", "engineer", "pilot", "host", "scholar", "coach", "chief", "musician", "gardener", "nightowl", "agent", "gent", "royal", "wizard", "pirate", "cowboy", "captain", "sailor", "builder", "robot", "hero", "champion", "artist", "romantic", "santa", "angel", "devil", "sprout", "plain"]
+      "enum": [
+        "banker",
+        "navigator",
+        "chef",
+        "engineer",
+        "pilot",
+        "host",
+        "scholar",
+        "coach",
+        "chief",
+        "musician",
+        "gardener",
+        "nightowl",
+        "agent",
+        "gent",
+        "royal",
+        "wizard",
+        "pirate",
+        "cowboy",
+        "captain",
+        "sailor",
+        "builder",
+        "robot",
+        "hero",
+        "champion",
+        "artist",
+        "romantic",
+        "santa",
+        "angel",
+        "devil",
+        "sprout",
+        "plain"
+      ]
     },
-    "voice": { "enum": ["sarah", "alice", "lily", "matilda", "laura", "river", "daniel", "brian", "charlie", "will"] },
+    "voice": {
+      "enum": [
+        "sarah",
+        "alice",
+        "lily",
+        "matilda",
+        "laura",
+        "river",
+        "daniel",
+        "brian",
+        "charlie",
+        "will"
+      ]
+    },
+    "color": {
+      "description": "The face's tile colour, one of Marten's twelve.",
+      "enum": [
+        "#F2B23E",
+        "#8A4B2A",
+        "#FBE3B0",
+        "#E9775B",
+        "#F2B5C0",
+        "#6B3F69",
+        "#B9A6E3",
+        "#2F5D8A",
+        "#8EC5E8",
+        "#2F6F6A",
+        "#9DB89A",
+        "#3E5C3A"
+      ]
+    },
     "needs": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["apps"],
+      "required": [
+        "apps"
+      ],
       "properties": {
-        "apps": { "type": "array", "items": { "$ref": "#/$defs/app" } },
-        "optional": { "type": "array", "items": { "$ref": "#/$defs/app" } },
+        "apps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/app"
+          }
+        },
+        "optional": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/app"
+          }
+        },
         "mcp": {
           "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["name", "why"],
-            "properties": { "name": { "type": "string", "minLength": 1 }, "why": { "$ref": "#/$defs/why" } }
+            "required": [
+              "name",
+              "why"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "why": {
+                "$ref": "#/$defs/why"
+              }
+            }
           }
         }
       }
@@ -42,26 +182,84 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["app", "type", "title", "instructions"],
+        "required": [
+          "app",
+          "type",
+          "title",
+          "instructions"
+        ],
         "properties": {
-          "app": { "$ref": "#/$defs/appId" },
-          "type": { "type": "string", "pattern": "^[A-Z0-9_]+$" },
-          "title": { "type": "string", "minLength": 1, "maxLength": 60 },
-          "config": { "type": "object" },
-          "instructions": { "type": "string", "minLength": 10, "maxLength": 2000 }
+          "app": {
+            "$ref": "#/$defs/appId"
+          },
+          "type": {
+            "type": "string",
+            "pattern": "^[A-Z0-9_]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          },
+          "config": {
+            "type": "object"
+          },
+          "instructions": {
+            "type": "string",
+            "minLength": 10,
+            "maxLength": 2000
+          }
         }
       }
     },
-    "examples": { "type": "array", "minItems": 2, "maxItems": 5, "items": { "type": "string", "minLength": 2, "maxLength": 120 } }
+    "examples": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 120
+      }
+    }
   },
   "$defs": {
-    "appId": { "enum": ["gmail", "googlecalendar", "linear", "github", "slack", "notion", "stripe", "vercel", "posthog", "ynab", "superset", "typefully"] },
-    "why": { "type": "string", "minLength": 5, "maxLength": 120 },
+    "appId": {
+      "enum": [
+        "gmail",
+        "googlecalendar",
+        "linear",
+        "github",
+        "slack",
+        "notion",
+        "stripe",
+        "vercel",
+        "posthog",
+        "ynab",
+        "superset",
+        "typefully"
+      ]
+    },
+    "why": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 120
+    },
     "app": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["app", "why"],
-      "properties": { "app": { "$ref": "#/$defs/appId" }, "why": { "$ref": "#/$defs/why" } }
+      "required": [
+        "app",
+        "why"
+      ],
+      "properties": {
+        "app": {
+          "$ref": "#/$defs/appId"
+        },
+        "why": {
+          "$ref": "#/$defs/why"
+        }
+      }
     }
   }
 }

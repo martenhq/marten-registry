@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "artist",
   "voice": "lily",
+  "color": "#B9A6E3",
   "needs": {
     "apps": [{ "app": "typefully", "why": "to read your past posts and save drafts; it schedules only when you ask" }],
     "optional": []

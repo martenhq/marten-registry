@@ -8,6 +8,7 @@ martens/trip-planner/
   marten.json        who it is, what it needs, where it can live
   AGENTS.md          its job, written for nobody in particular
   README.md          the listing page's long description
+  CHANGELOG.md       what changed in each version
   skills/<name>/SKILL.md (+ scripts)
   sketches/<name>.tsx | <name>.jsx | <name>.html | <name>/index.html
   tasks.yaml         the work it starts with (optional)
@@ -29,6 +30,7 @@ martens/trip-planner/
   "for": ["group", "you"],
   "look": "navigator",
   "voice": "charlie",
+  "color": "#8EC5E8",
   "needs": { "apps": [], "optional": [{ "app": "gmail", "why": "to find your bookings in your inbox" }], "mcp": [] },
   "triggers": [],
   "examples": ["We're going to Goa in March", "Who still needs to book flights?"]
@@ -45,6 +47,7 @@ martens/trip-planner/
 | `for` | where it can be installed: `you` (a Marten of your own, with its 1:1), `group` (added to a group, which can have several) |
 | `look` | a look id: `banker`, `navigator`, `chef`, `engineer`, `pilot`, `host`, `scholar`, `coach`, `chief`, `musician`, `gardener`, `nightowl`, `agent`, `gent`, `royal`, `wizard`, `pirate`, `cowboy`, `captain`, `sailor`, `builder`, `robot`, `hero`, `champion`, `artist`, `romantic`, `santa`, `angel`, `devil`, `sprout`, or `plain` |
 | `voice` | how it speaks on calls and in voice replies: `sarah`, `alice`, `lily`, `matilda`, `laura`, `river`, `daniel`, `brian`, `charlie`, `will` |
+| `color` | its face's tile: one of Marten's twelve, `#F2B23E` amber, `#8A4B2A` chestnut, `#FBE3B0` cream, `#E9775B` coral, `#F2B5C0` pink, `#6B3F69` plum, `#B9A6E3` lavender, `#2F5D8A` navy, `#8EC5E8` sky, `#2F6F6A` teal, `#9DB89A` sage, `#3E5C3A` forest |
 | `needs.apps` | apps it can't work without, each `{ app, why }`. The installer connects their own account; no token is ever in a package |
 | `needs.optional` | apps it uses when they're there |
 | `needs.mcp` | MCP servers it expects, `{ name, why }`, which the installer adds themselves |
@@ -110,6 +113,17 @@ you and it), and its `AGENTS.md` should name the keys and their shape.
 | `time` | `HH:MM`, the installer's time zone; with `repeat`, each occurrence's time |
 | `assignee` | `marten` (the default: a task turn when it's due) or `owner` (the person who installed it) |
 | `when` | `{ missing: <app> }`: made only while that app isn't connected |
+
+## Versions
+
+`version` is semver, and every change to a listing bumps it: a patch for wording and fixes, a minor version for
+something new (a skill, a sketch, a task), a major one when it drops something or needs a new app. `CHANGELOG.md`
+says what changed, newest first, one `## <version>` heading each; its newest entry must be the listing's version.
+CI checks both on every pull request (`scripts/check-versions.ts`).
+
+Merging publishes the version, which is reviewed before people see it. An installed Marten keeps the version it came
+from and shows "Update available" with the changelog; updating refreshes its skills, adds new sketches and tasks, and
+hands it the changed instructions to fold into its own `AGENTS.md`.
 
 ## Never in a package
 

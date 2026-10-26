@@ -14,6 +14,7 @@ const enumOf = (def: { enum: string[] }) => def.enum;
 const APPS = enumOf(schema.$defs.appId);
 const LOOKS = enumOf(schema.properties.look);
 const VOICES = enumOf(schema.properties.voice);
+const COLORS = enumOf(schema.properties.color);
 const CATEGORIES = enumOf(schema.properties.category);
 const KEYS = new Set(Object.keys(schema.properties));
 
@@ -74,6 +75,7 @@ function checkManifest(dir: string, m: Record<string, unknown>, p: Problem[]) {
   if (!CATEGORIES.includes(m.category as string)) p.push(`marten.json: category "${m.category}" isn't one of ${CATEGORIES.join(", ")}`);
   if (!LOOKS.includes(m.look as string)) p.push(`marten.json: look "${m.look}" isn't a look id`);
   if (!VOICES.includes(m.voice as string)) p.push(`marten.json: voice "${m.voice}" isn't one of ${VOICES.join(", ")}`);
+  if (!COLORS.includes(m.color as string)) p.push(`marten.json: color "${m.color}" isn't one of Marten's tile colours: ${COLORS.join(", ")}`);
 
   const where = Array.isArray(m.for) ? (m.for as string[]) : [];
   if (!where.length || where.some((w) => w !== "you" && w !== "group") || new Set(where).size !== where.length) {
@@ -186,7 +188,7 @@ function checkListing(dir: string): Problem[] {
   }
   if (bytes > MAX_BYTES) p.push(`${(bytes / 1024 / 1024).toFixed(1)} MB; at most 5 MB`);
 
-  for (const required of ["marten.json", "AGENTS.md", "README.md"]) if (!files.includes(required)) p.push(`${required} is missing`);
+  for (const required of ["marten.json", "AGENTS.md", "README.md", "CHANGELOG.md"]) if (!files.includes(required)) p.push(`${required} is missing`);
   if (p.some((x) => x.startsWith("marten.json is missing"))) return p;
 
   let manifest: Record<string, unknown>;
@@ -204,6 +206,10 @@ function checkListing(dir: string): Problem[] {
     if (read("AGENTS.md").trim().length < 200) p.push("AGENTS.md is too short to brief a Marten");
   }
   if (files.includes("tasks.yaml")) checkTasks(read("tasks.yaml"), apps, p);
+  if (files.includes("CHANGELOG.md")) {
+    const top = /^## (\S+)/m.exec(read("CHANGELOG.md"))?.[1];
+    if (top !== manifest.version) p.push(`CHANGELOG.md: its newest entry is "## ${top ?? "?"}"; it needs one for ${manifest.version}`);
+  }
 
   const skillDirs = new Set(files.filter((f) => f.startsWith("skills/")).map((f) => f.split("/")[1]));
   for (const s of skillDirs) {

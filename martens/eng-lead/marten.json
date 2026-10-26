@@ -8,6 +8,7 @@
   "for": ["you"],
   "look": "engineer",
   "voice": "will",
+  "color": "#2F6F6A",
   "needs": {
     "apps": [
       { "app": "linear", "why": "to see what moved, what's stuck and what's assigned to you" },
