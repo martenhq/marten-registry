@@ -8,6 +8,8 @@ Installed, it's yours: it learns from you, uses your connected apps, and keeps w
 
 ## Martens
 
+Two shelves, as in the apps. A Marten that can be both yours and a group's (Trip Planner) is on both.
+
 **For groups**: added to a group chat, shared by everyone in it.
 
 | | |
@@ -21,6 +23,7 @@ Installed, it's yours: it learns from you, uses your connected apps, and keeps w
 | [Challenge](martens/challenge) | check-ins, streaks, a leaderboard |
 | [Standup](martens/standup) | a team's async standup and its blockers |
 | [Decider](martens/decider) | gathers options, runs the vote, calls it |
+| [Couples](martens/couples) | a weekly check-in for two (everyone in the group agrees first) |
 
 **For you**: a Marten of your own, with its 1:1.
 
@@ -35,16 +38,12 @@ Installed, it's yours: it learns from you, uses your connected apps, and keeps w
 | [Language Partner](martens/language-partner) | practice on calls, corrected gently |
 | [Job Hunt](martens/job-hunt) | applications, follow-ups, mock interviews |
 | [Life Admin](martens/life-admin) | renewals, documents, appointments |
-
-**To talk to**: none of them is a therapist or a professional.
-
-| | |
-|---|---|
-| [Reflect](martens/reflect) | someone to talk things through with |
-| [Journal](martens/journal) | an evening prompt, and looking back |
-| [Calm](martens/calm) | breathing and wind-down, said aloud |
+| [Reflect](martens/reflect) | someone to talk things through with* |
+| [Journal](martens/journal) | an evening prompt, and looking back* |
+| [Calm](martens/calm) | breathing and wind-down, said aloud* |
 | [Mentor](martens/mentor) | career decisions and hard conversations, rehearsed |
-| [Couples](martens/couples) | a weekly check-in for two |
+
+\* Reflect, Journal, Calm and Couples aren't therapists or professionals of any kind, and say so.
 
 ## Make one
 
