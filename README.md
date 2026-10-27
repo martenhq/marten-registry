@@ -23,7 +23,7 @@ Two shelves, as in the apps. A Marten that can be both yours and a group's (Trip
 | [Challenge](martens/challenge) | check-ins, streaks, a leaderboard |
 | [Standup](martens/standup) | a team's async standup and its blockers |
 | [Decider](martens/decider) | gathers options, runs the vote, calls it |
-| [Couples](martens/couples) | a weekly check-in for two (everyone in the group agrees first) |
+| [Couples](martens/couples) | a weekly check-in for two (everyone in the group agrees first)* |
 
 **For you**: a Marten of your own, with its 1:1.
 
